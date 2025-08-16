@@ -8,7 +8,7 @@ export async function GET(request: NextRequest) {
     const userId = searchParams.get('userId')
     const status = searchParams.get('status')
 
-    const where: any = {}
+    const where: Partial<{ userId: string; status: string }> = {}
 
     if (userId) {
       where.userId = userId

@@ -8,7 +8,7 @@ export async function GET(request: NextRequest) {
     const featured = searchParams.get('featured')
     const category = searchParams.get('category')
 
-    const where: any = {
+    const where: Partial<{ featured: boolean; category: string; active: boolean }> = {
       active: true
     }
 

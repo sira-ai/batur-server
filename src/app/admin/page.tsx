@@ -1,14 +1,12 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { 
-  Package, 
-  ShoppingCart, 
-  Users, 
+import {
+  Package,
+  ShoppingCart,
+  Users,
   TrendingUp,
-  DollarSign,
-  Eye,
-  Calendar
+  DollarSign
 } from 'lucide-react'
 
 // Mock data untuk demo

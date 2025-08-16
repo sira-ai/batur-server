@@ -12,9 +12,9 @@ export const createClient_Browser = () =>
   createBrowserClient(supabaseUrl, supabaseAnonKey)
 
 // Server client for SSR
-export const createClient_Server = () => {
-  const { createServerClient } = require('@supabase/ssr')
-  const { cookies } = require('next/headers')
+export const createClient_Server = async () => {
+  const { createServerClient } = await import("@supabase/ssr")
+  const { cookies } = await import("next/headers")
   
   return createServerClient(supabaseUrl, supabaseAnonKey, {
     cookies: {

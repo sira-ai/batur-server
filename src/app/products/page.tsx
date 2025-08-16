@@ -77,9 +77,8 @@ const mockProducts: Product[] = [
 ]
 
 export default function ProductsPage() {
-  const [products, setProducts] = useState<Product[]>(mockProducts)
   const [filteredProducts, setFilteredProducts] = useState<Product[]>(mockProducts)
-  const [searchTerm, setSearchTerm] = useState('')
+  const [searchTerm, setSearchTerm] = useState("")
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid')
   const [sortBy, setSortBy] = useState('name')
