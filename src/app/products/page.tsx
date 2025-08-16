@@ -117,7 +117,7 @@ export default function ProductsPage() {
     })
 
     setFilteredProducts(filtered)
-  }, [products, searchTerm, selectedCategory, sortBy])
+  }, [searchTerm, selectedCategory, sortBy])
 
   const handleAddToCart = (product: Product) => {
     // TODO: Implement add to cart functionality

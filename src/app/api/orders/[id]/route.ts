@@ -4,7 +4,7 @@ import { prisma } from '@/lib/prisma'
 // GET /api/orders/[id] - Get single order
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  params: { params: { id: string } }
 ) {
   try {
     const order = await prisma.order.findUnique({
