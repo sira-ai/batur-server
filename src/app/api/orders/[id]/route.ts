@@ -4,10 +4,10 @@ import { prisma } from '@/lib/prisma'
 // GET /api/orders/[id] - Get single order
 export async function GET(
   request: NextRequest,
-  context: { params: { id: string } }
+  { params }: { params: { id: string } }
 ) {
-  const { id } = context.params
   try {
+    const { id } = params
     const order = await prisma.order.findUnique({
       where: {
         id: id
