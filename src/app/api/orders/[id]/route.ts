@@ -47,6 +47,7 @@ export async function PUT(
   { params }: { params: { id: string } }
 ) {
   try {
+    const { id } = params
     const body = await request.json()
     const { status } = body
 
@@ -67,7 +68,7 @@ export async function PUT(
 
     const order = await prisma.order.update({
       where: {
-        id: params.id
+        id: id
       },
       data: {
         status
@@ -100,9 +101,10 @@ export async function DELETE(
   { params }: { params: { id: string } }
 ) {
   try {
+    const { id } = params
     await prisma.order.delete({
       where: {
-        id: params.id
+        id: id
       }
     })
 
