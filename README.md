@@ -45,20 +45,20 @@ Buat file `.env.local` dan isi dengan:
 
 ```env
 # Supabase Configuration
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url_here
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key_here
-SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key_here
+NEXT_PUBLIC_SUPABASE_URL=https://yizmqpptrpbxzapkifox.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inlpem1xcHB0cnBieHphcGtpZm94Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUzNjQ4MzEsImV4cCI6MjA3MDk0MDgzMX0.54yFr8MwJf9oVX4XVRXlZw_gmum1LP74E0vSZBZP4ZA
+SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inlpem1xcHB0cnBieHphcGtpZm94Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1NTM2NDgzMSwiZXhwIjoyMDcwOTQwODMxfQ.NBQvUNG5-ZDpYMAa7v66tMPOfWriChfT5s587IhBL1k
 
 # Database
-DATABASE_URL=your_postgresql_connection_string_here
+DATABASE_URL=postgresql://postgres:JJ0LAbZuLHJb3Rk7@db.yizmqpptrpbxzapkifox.supabase.co:5432/postgres
 
 # Next.js
 NEXTAUTH_SECRET=your_nextauth_secret_here
-NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_URL=https://batur-serve.vercel.app/
 
 # Admin Credentials
-ADMIN_EMAIL=admin@baturserver.com
-ADMIN_PASSWORD=admin123
+ADMIN_EMAIL=ibradecode@gmail.com
+ADMIN_PASSWORD=088103
 ```
 
 ### 3. Setup Database
